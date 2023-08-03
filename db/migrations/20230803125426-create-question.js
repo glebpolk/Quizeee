@@ -12,11 +12,11 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT,
       },
-      aswer: {
+      answer: {
         allowNull: false,
         type: Sequelize.TEXT,
       },
-      thene_id: {
+      theme_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
