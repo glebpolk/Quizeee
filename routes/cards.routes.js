@@ -14,4 +14,16 @@ router.get('/', async (req, res) => {
 });
 
 
+router.get('/:cardId', async (req, res) => {
+  const { cardId } = req.params;
+  try {
+    const question = await Theme.findAll({ where: { id: cardId } });
+    const document = res.renderComponent(CardItem, { question, title: 'Card page' });
+    res.send(document);
+  } catch ({ message }) {
+    res.json(message);
+  }
+});
+
+
 module.exports = router;

@@ -6,53 +6,53 @@ module.exports = {
     const questionData = [
       {
         quest: "Вопрос 1",
-        aswer: "Ответ 1",
-        thene_id: 1,
+        answer: "Ответ 1",
+        theme_id: 1,
       },
       {
         quest: "Вопрос 2",
-        aswer: "Ответ 2",
-        thene_id: 1,
+        answer: "Ответ 2",
+        theme_id: 1,
       },
       {
         quest: "Вопрос 3",
-        aswer: "Ответ 3",
-        thene_id: 1,
+        answer: "Ответ 3",
+        theme_id: 1,
       },
       {
         quest: "Вопрос 4",
-        aswer: "Ответ 4",
-        thene_id: 1,
+        answer: "Ответ 4",
+        theme_id: 1,
       },
       {
         quest: "Вопрос 5",
-        aswer: "Ответ 5",
-        thene_id: 1,
+        answer: "Ответ 5",
+        theme_id: 1,
       },
       {
         quest: "Вопрос 1",
-        aswer: "Ответ 1",
-        thene_id: 2,
+        answer: "Ответ 1",
+        theme_id: 2,
       },
       {
         quest: "Вопрос 2",
-        aswer: "Ответ 2",
-        thene_id: 2,
+        answer: "Ответ 2",
+        theme_id: 2,
       },
       {
         quest: "Вопрос 3",
-        aswer: "Ответ 3",
-        thene_id: 2,
+        answer: "Ответ 3",
+        theme_id: 2,
       },
       {
         quest: "Вопрос 4",
-        aswer: "Ответ 4",
-        thene_id: 2,
+        answer: "Ответ 4",
+        theme_id: 2,
       },
       {
         quest: "Вопрос 5",
-        aswer: "Ответ 5",
-        thene_id: 2,
+        answer: "Ответ 5",
+        theme_id: 2,
       },
     ];
     const questions = questionData.map((question) => ({

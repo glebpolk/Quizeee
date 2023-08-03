@@ -12,11 +12,11 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.TEXT,
       },
-      aswer: {
+      answer: {
         allowNull: false,
         type: DataTypes.TEXT,
       },
-      thene_id: {
+      theme_id: {
         allowNull: false,
         type: DataTypes.INTEGER,
         references: {

@@ -1,13 +1,13 @@
 const React = require("react");
 
-function Game({ question }) {
+function Game({ game }) {
   return (
     <div
       className="cardGame"
       style={{ margin: "200px", display: "flex", justifyContent: "center" }}
     >
       <div class="alert alert-success" role="alert">
-        Лучший человек на земле?
+        {game.quest}
       </div>
 
       <div
