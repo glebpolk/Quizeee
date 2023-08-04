@@ -1,7 +1,8 @@
 const React = require("react");
 const Layout = require("./Layout");
 
-function Game({ question }) {
+function Game({ question, questions }) {
+  const i = questions.indexOf(question);
   return (
     <Layout question={question}>
       <form
@@ -45,7 +46,7 @@ function Game({ question }) {
                 Проверить ответ
               </button>
               <a
-                href={`/game/${question.theme_id}/question/${question.id + 1}`}
+                href={`/game/${question.theme_id}/question/${i + 2}`}
                 className="btn btn-primary"
                 style={{ margin: "20px" }}
               >
