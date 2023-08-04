@@ -18,7 +18,13 @@ function CardsPage({ title, themes }) {
       </h1>
       <div
         className="container cards-list"
-        style={{ display: 'flex', flexWrap: 'wrap', width: '700px' }}
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          width: '700px',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
         {themes.map((card) => (
           <CardItem card={card} />
