@@ -3,11 +3,11 @@ const Layout = require('./Layout');
 
 function Game({ question }) {
   return (
-    <Layout game={game}>
+    <Layout question={question}>
       <div
         className="cardGame container"
         style={{
-          width: '1000px'
+          width: '1000px',
         }}
       >
         <div
@@ -15,7 +15,7 @@ function Game({ question }) {
           role="alert"
           style={{ marginTop: '150px' }}
         >
-          {game.quest}
+          {question.quest}
         </div>
 
         <div className="card-body">
