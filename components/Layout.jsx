@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 module.exports = function Layout({ title, children }) {
   return (
     <html lang="en">
@@ -14,12 +13,8 @@ module.exports = function Layout({ title, children }) {
           crossOrigin="anonymous"
         />
         <script defer src="/scripts/scripts.js" />
-        
       </head>
-      <body>
-       
-        {children}
-      </body>
+      <body style={{ backgroundImage: 'url("https://celes.club/uploads/posts/2022-05/1653055037_9-celes-club-p-fon-dlya-kviza-krasivie-9.jpg")' }}>{children}</body>
     </html>
   );
 };
