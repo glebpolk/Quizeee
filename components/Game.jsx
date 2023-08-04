@@ -1,13 +1,13 @@
 const React = require("react");
 
-function Game({ game }) {
+function Game({ question }) {
   return (
     <div
       className="cardGame"
       style={{ margin: "200px", display: "flex", justifyContent: "center" }}
     >
       <div class="alert alert-success" role="alert">
-        {game.quest}
+        {question.quest}
       </div>
 
       <div
