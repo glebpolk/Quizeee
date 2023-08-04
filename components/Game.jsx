@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function Game({ game }) {
+function Game({ question }) {
   return (
     <Layout game={game}>
       <div

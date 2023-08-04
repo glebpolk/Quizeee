@@ -11,9 +11,9 @@ router.get('/:gameId/question/:questionId', async (req, res) => {
   const { gameId } = req.params;
   const { questionId } = req.params;
   try {
-    const game = await Question.findOne({ where: { theme_id: gameId, id: questionId } });
-    console.log(game)
-    const document = res.renderComponent(Game, { game, title: 'Game page' });
+    const questions = await Question.findAll({ where: { theme_id: gameId } });
+
+    const document = res.renderComponent(Game, {question: questions[questionId-1] }  );
     res.send(document);
   } catch ({ message }) {
     res.json(message);
